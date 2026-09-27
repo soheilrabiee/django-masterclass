@@ -12,7 +12,7 @@ The course focuses on building practical Django applications, working with datab
 - **Django 6**
 - **Django REST Framework**
 - **django-filter**
-- **drf-spectacular** — OpenAPI schema generation and API documentation
+- **drf-spectacular**
 
 ### Database
 
@@ -29,12 +29,11 @@ The course focuses on building practical Django applications, working with datab
 
 ### Supporting Libraries & Tools
 
-- **Pillow** — Image processing
-- **python-dotenv** — Environment variable management
-- **Ruff** — Python linting
-- **djLint** — Django template linting and formatting
-- **Insomnia** — REST API testing
-- **Git & GitHub**
+- **Pillow**
+- **python-dotenv**
+- **Ruff**
+- **djLint**
+- **Insomnia**
 
 ## 📁 Repository Structure
 
