@@ -1,210 +1,113 @@
-# Django Masterclass Projects
+# Django Masterclass
 
-A collection of practical Django projects developed while completing the **Django Masterclass: Build 9 Real World Django Projects**.
+A collection of Django projects built while following the **Django Masterclass: Build 9 Real-World Django Projects** course.
 
-The repository focuses on practical **Python/Django backend development**, covering Django fundamentals, database-driven applications, authentication, and REST API development with Django REST Framework.
+The course focuses on building practical Django applications, working with databases and authentication, and developing REST APIs with Django REST Framework.
 
 ## 🛠️ Tech Stack
 
+### Backend
+
 - **Python**
-- **Django**
+- **Django 6**
 - **Django REST Framework**
+- **django-filter**
+- **drf-spectacular** — OpenAPI schema generation and API documentation
+
+### Database
+
 - **PostgreSQL**
-- **SQLite**
-- **Git**
-- **Insomnia**
+- **Django ORM**
+- **psycopg**
 
-## 📚 Topics Covered
+### Authentication & Security
 
-### Django
+- **Django Authentication**
+- **DRF Token Authentication**
+- **JWT Authentication**
+- **Django Permissions**
 
-- Django project and application structure
-- MVT architecture
-- URL routing and namespacing
-- Function-based views
-- Class-based views
-- Templates and template inheritance
-- Static and media files
-- Forms and ModelForms
-- CRUD operations
-- Django Admin
+### Supporting Libraries & Tools
 
-### Database & ORM
-
-- Django models and relationships
-- Database migrations
-- Django ORM and QuerySets
-- CRUD database operations
-- ForeignKey and OneToOne relationships
-- Model validation
-- PostgreSQL integration
-- Query optimization and efficient database access
-- Soft-delete patterns
-
-### Authentication & Authorization
-
-- User registration and authentication
-- Login and logout
-- User-specific data
-- Authentication and authorization
-- Permissions and access control
-- Token-based authentication
-- JWT authentication
-
-### Backend Development
-
-- Class-based views
-- Custom middleware
-- Request/response lifecycle
-- Pagination
-- Search and filtering
-- Logging
-- Validation and error handling
-- Caching
-- Reusable backend patterns
-
-### REST API Development
-
-Hands-on development with Django REST Framework, including:
-
-- Serializers
-- Function-based API views
-- `APIView`
-- Generic API views
-- `ListCreateAPIView`
-- `RetrieveUpdateDestroyAPIView`
-- `ModelViewSet`
-- Routers
-- RESTful CRUD endpoints
-- API authentication
-- API permissions
-- JWT authentication
-
-## 📂 Projects
-
-### `mysite`
-
-The first project in the Masterclass repository, covering the core Django development workflow and progressing into backend API development.
-
-The project includes practical implementations of:
-
-- Django project and app architecture
-- Models, migrations, and Django ORM
-- Database relationships
-- Forms and validation
-- User authentication
-- Permissions and authorization
-- Function-based and class-based views
-- Custom middleware
-- Pagination
-- Search and filtering
-- Application logging
-- Soft deletion
-- PostgreSQL
-- Django REST Framework
-- RESTful CRUD APIs
-- Token and JWT authentication
-- API permissions
-
-Additional projects from the Masterclass will be added to this repository as they are completed.
+- **Pillow** — Image processing
+- **python-dotenv** — Environment variable management
+- **Ruff** — Python linting
+- **djLint** — Django template linting and formatting
+- **Insomnia** — REST API testing
+- **Git & GitHub**
 
 ## 📁 Repository Structure
+
+Each project from the course is kept in its own directory.
 
 ```text
 django-projects/
 │
-├── mysite/
-│   ├── manage.py
-│   ├── <django-project>/
-│   └── <django-apps>/
+├── project-1/
+├── project-2/
+├── project-3/
+├── ...
 │
 ├── requirements.txt
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
-Each Masterclass project will be maintained within its own directory while sharing the repository's overall development environment.
+## ⚙️ Setup
 
-## 🚀 Getting Started
-
-### Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone <repository-url>
 cd django-projects
 ```
 
-### Create a Virtual Environment
-
-**Windows**
+### 2. Create and activate a virtual environment
 
 ```bash
 python -m venv .venv
+```
+
+On Windows:
+
+```bash
 .venv\Scripts\activate
 ```
 
-**Linux / macOS**
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### Install Dependencies
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Apply Migrations
+### 4. Configure environment variables
+
+Create a `.env` file when required by a project.
+
+```env
+SECRET_KEY=your-secret-key
+DEBUG=True
+
+DB_NAME=your-database
+DB_USER=your-user
+DB_PASSWORD=your-password
+DB_HOST=localhost
+DB_PORT=5432
+```
+
+### 5. Run migrations
 
 ```bash
-python mysite/manage.py migrate
+python manage.py migrate
 ```
 
-### Run the Development Server
+### 6. Start the development server
 
 ```bash
-python mysite/manage.py runserver
+python manage.py runserver
 ```
 
-The development server will be available at:
+## 📚 About the Course
 
-```text
-http://127.0.0.1:8000/
-```
+The course uses multiple hands-on projects to explore Django and its ecosystem, progressing from core Django development to building REST APIs with Django REST Framework.
 
-> Some projects may require additional configuration, such as PostgreSQL credentials or environment variables.
-
-## 📦 Dependencies
-
-Python dependencies are listed in [`requirements.txt`](requirements.txt).
-
-Install them with:
-
-```bash
-pip install -r requirements.txt
-```
-
-## 🎯 Focus
-
-The repository emphasizes practical backend development with Python and Django, including:
-
-- Designing Django applications and data models
-- Working with the Django ORM
-- PostgreSQL and database migrations
-- Building RESTful APIs
-- Authentication and authorization
-- API permissions and access control
-- Validation and error handling
-- Pagination and filtering
-- Database query optimization
-- Application logging
-- Writing maintainable backend code
-
-## 🎓 Course
-
-**Django Masterclass: Build 9 Real World Django Projects**  
-by **Ashutosh Pawar**
-
-[View the course on Udemy](https://www.udemy.com/course/django-course/)
+This repository contains the implementations and code developed throughout the course.
