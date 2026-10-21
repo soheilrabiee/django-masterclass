@@ -24,6 +24,7 @@ local_settings.py
 
 # Media files
 pictures/
+media/
 
 # Local cache
 cache/
